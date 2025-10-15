@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Design Patterns/Design Patterns.iml" filepath="$PROJECT_DIR$/Design Patterns/Design Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPattens/DesignPattens.iml" filepath="$PROJECT_DIR$/DesignPattens/DesignPattens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElevatorDesign/ElevatorDesign.iml" filepath="$PROJECT_DIR$/ElevatorDesign/ElevatorDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GrookingSD/GrookingSD.iml" filepath="$PROJECT_DIR$/GrookingSD/GrookingSD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LLD.iml" filepath="$PROJECT_DIR$/.idea/LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LogginSystemBasic/LogginSystemBasic.iml" filepath="$PROJECT_DIR$/LogginSystemBasic/LogginSystemBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoggingSystem/LoggingSystem.iml" filepath="$PROJECT_DIR$/LoggingSystem/LoggingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParkingLotSystem/ParkingLotSystem.iml" filepath="$PROJECT_DIR$/ParkingLotSystem/ParkingLotSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParkingLotTest/ParkingLotTest.iml" filepath="$PROJECT_DIR$/ParkingLotTest/ParkingLotTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SnakeLadder/SnakeLadder.iml" filepath="$PROJECT_DIR$/SnakeLadder/SnakeLadder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/TicTacToe/TicTacToe.iml" />
+    </modules>
+  </component>
+</project>
