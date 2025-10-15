@@ -29,3 +29,14 @@ All notable changes to this project are documented here, including versions and 
 - RubberDuck inherits fly() even though it cannot fly
 - Shows limitation of using inheritance for all behaviors
 - Will be refactored in future versions using interfaces/composition
+
+## [Design Principles v1.1.1] - Temporary fly() fix for RubberDuck
+**Date:** 2025-10-15
+
+### Changes:
+- RubberDuck overrides fly() to indicate it cannot fly
+- Updated DuckSimulator to demonstrate temporary fix
+
+### Known Issues / Notes:
+- This is a temporary fix; inheritance still forces behavior on other ducks
+- Future versions will use interfaces/composition to solve this properly

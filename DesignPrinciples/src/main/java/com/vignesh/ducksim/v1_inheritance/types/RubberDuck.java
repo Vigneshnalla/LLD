@@ -4,18 +4,15 @@ import com.vignesh.ducksim.v1_inheritance.Duck;
 
 public class RubberDuck extends Duck {
 
-    // ---- Constructor ----
     public RubberDuck(String name) {
-        // Default color and size for RubberDuck
         super(name, "Yellow", 0.3);
     }
 
     public RubberDuck() {
-        // Default name if none provided
         this("Rubber Duck");
     }
 
-    // ---- Override behaviors ----
+    // ---- Override quack and swim as before ----
     @Override
     public void quack() {
         System.out.println(getName() + " squeaks: Squeak! Squeak! 🧸");
@@ -30,5 +27,11 @@ public class RubberDuck extends Duck {
     public void display() {
         System.out.println("----- Rubber Duck Info -----");
         super.display();
+    }
+
+    // ---- TEMP FIX: Override fly() to prevent inappropriate behavior ----
+    @Override
+    public void fly() {
+        System.out.println(getName() + " cannot fly 🧸 (temporary fix)");
     }
 }
