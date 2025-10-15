@@ -62,6 +62,10 @@ public class Duck {
         System.out.println(getName() + " is swimming gracefully in the pond 🏞️");
     }
 
+    public void fly() {
+        System.out.println(getName() + " is flying gracefully in the sky 🕊️");
+    }
+
     public void display() {
         System.out.println("Name    : " + getName());
         System.out.println("Color   : " + getColor());
