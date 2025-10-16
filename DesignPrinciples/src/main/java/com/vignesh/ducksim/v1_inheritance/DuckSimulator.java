@@ -1,6 +1,5 @@
-package com.vignesh;
+package com.vignesh.ducksim.v1_inheritance;
 
-import com.vignesh.ducksim.v1_inheritance.Duck;
 import com.vignesh.ducksim.v1_inheritance.types.MallardDuck;
 import com.vignesh.ducksim.v1_inheritance.types.RedheadDuck;
 import com.vignesh.ducksim.v1_inheritance.types.RubberDuck;

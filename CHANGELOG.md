@@ -4,6 +4,21 @@ All notable changes to this project are documented here, including versions and 
 
 ---
 
+## [Design Principles v2] - Interfaces & Composition
+**Date:** 2025-10-16
+### Changes:
+- Extracted behaviors from Duck into separate interfaces: Flyable and Quackable
+- Duck now only contains common properties (name, color, size, isAlive) and shared methods (swim(), display())
+- Duck Subclasses implement only the appropriate behaviors
+- Enables flexible, decoupled, and composable behaviors.
+
+### Known Issues / Notes:
+- No Major issues currently, but there is no code reuse for behaviors implementations yet.
+- Behaviors cannot be changed at runtime (e.g., switching fly or quack behaviors dynamically).
+
+
+---
+
 ## [Design Principles v1.1.1] - Temporary fly() fix for RubberDuck
 **Date:** 2025-10-15
 
