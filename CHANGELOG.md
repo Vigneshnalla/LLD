@@ -4,16 +4,16 @@ All notable changes to this project are documented here, including versions and 
 
 ---
 
-## [Design Principles v1] - Inheritance
-**Date:** 2025-09-28
+## [Design Principles v1.1.1] - Temporary fly() fix for RubberDuck
+**Date:** 2025-10-15
 
 ### Changes:
-- Created basic Duck class with quack() and swim()
-- Added MallardDuck and RedheadDuck subclasses
-- Implemented DuckSimulator to demonstrate basic inheritance and behaviors
+- RubberDuck overrides fly() to indicate it cannot fly
+- Updated DuckSimulator to demonstrate temporary fix
 
 ### Known Issues / Notes:
-- No major issues in this initial version
+- This is a temporary fix; inheritance still forces behavior on other ducks
+- Future versions will use interfaces/composition to solve this properly
 
 ---
 
@@ -30,13 +30,12 @@ All notable changes to this project are documented here, including versions and 
 - Shows limitation of using inheritance for all behaviors
 - Will be refactored in future versions using interfaces/composition
 
-## [Design Principles v1.1.1] - Temporary fly() fix for RubberDuck
-**Date:** 2025-10-15
+---
+
+## [Design Principles v1] - Inheritance
+**Date:** 2025-09-28
 
 ### Changes:
-- RubberDuck overrides fly() to indicate it cannot fly
-- Updated DuckSimulator to demonstrate temporary fix
-
-### Known Issues / Notes:
-- This is a temporary fix; inheritance still forces behavior on other ducks
-- Future versions will use interfaces/composition to solve this properly
+- Created basic Duck class with quack() and swim()
+- Added MallardDuck and RedheadDuck subclasses
+- Implemented DuckSimulator to demonstrate basic inheritance and behaviors
