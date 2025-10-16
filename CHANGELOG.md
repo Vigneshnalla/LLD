@@ -15,8 +15,8 @@ All notable changes to this project are documented here, including versions and 
 ### Known Issues / Notes:
 - No Major issues currently, but there is no code reuse for behaviors implementations yet.
 - Behaviors cannot be changed at runtime (e.g., switching fly or quack behaviors dynamically).
-
-
+- **Temporary fix**: Default methods in interfaces are used, but behaviors still cannot be changed at runtime.
+ 
 ---
 
 ## [Design Principles v1.1.1] - Temporary fly() fix for RubberDuck
