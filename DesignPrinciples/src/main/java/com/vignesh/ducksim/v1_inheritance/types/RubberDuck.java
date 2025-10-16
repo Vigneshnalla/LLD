@@ -32,6 +32,7 @@ public class RubberDuck extends Duck {
     // ---- TEMP FIX: Override fly() to prevent inappropriate behavior ----
     @Override
     public void fly() {
-        System.out.println(getName() + " cannot fly 🧸 (temporary fix)");
+        throw new UnsupportedOperationException(getName() + " cannot fly 🧸 (temporary fix)");
     }
+
 }
