@@ -3,8 +3,15 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ADummy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ADummy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesignPrinciples/DesingPrinciplesC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesignPrinciples/DesingPrinciplesC/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DesignPrinciples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DesignPrinciples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesingPatterns/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesingPatterns/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LibraryManagementSystem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LibraryManagementSystem/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/library-management-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/solidprinciples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/solidprinciples/src/main/resources" charset="UTF-8" />
   </component>

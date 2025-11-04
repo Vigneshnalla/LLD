@@ -6,10 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DesignPrinciples" />
+        <module name="DesingPatterns" />
         <module name="solidprinciples" />
         <module name="ADummy" />
+        <module name="DesingPrinciplesC" />
+      </profile>
+      <profile name="Annotation profile for LibraryManagementSystem" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="library-management-system" target="17" />
+      <module name="LibraryManagementSystem" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="library-management-system" options="-parameters" />
+    </option>
   </component>
 </project>
