@@ -25,7 +25,14 @@ public class Account {
     @Column(name = "status", nullable = false)
     private AccountStatus status;
 
-    @OneToOne
-    @JoinColumn(name = "person_id", nullable = false)
-    private Person person;
+    @Column(name = "full_name", nullable = false)
+    private String name;
+    @Column(unique = true, nullable = false)
+    private String email;
+
+    @Column(name = "phone_number")
+    private String phoneNo;
+
+    @Embedded
+    private Address address;
 }
