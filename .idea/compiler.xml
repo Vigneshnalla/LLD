@@ -18,10 +18,10 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="library-management-system" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="library-management-system" target="17" />
       <module name="LibraryManagementSystem" target="17" />
     </bytecodeTargetLevel>
   </component>
