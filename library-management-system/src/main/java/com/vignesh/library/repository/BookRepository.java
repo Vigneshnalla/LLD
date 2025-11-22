@@ -12,14 +12,15 @@ import java.util.Optional;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
-    Optional<Book> findByIsbn(String isbn);
+    Optional<Book> findByISBN(String isbn);
     List<Book> findByTitleContainingIgnoreCase(String title);
-    List<Book> findByAuthorContaining(String author);
+    // ✅ Replace with this custom query:
+    @Query("SELECT b FROM Book b JOIN b.authors a WHERE LOWER(a) LIKE LOWER(CONCAT('%', :authorName, '%'))")
+    List<Book> findByAuthorNameContaining(@Param("authorName") String authorName);
     List<Book> findBySubject(String subject);
     List<Book> findByPublisher(String publisher);
-    List<Book> findByYearPublished(Integer yearPublished);
 
     @Query("SELECT b FROM Book b WHERE LOWER(b.title) LIKE LOWER(CONCAT('%', :keyword, '%')) OR LOWER(b.subject) LIKE LOWER(CONCAT('%', :keyword, '%'))")
     List<Book> searchByTitleOrSubject(@Param("keyword") String keyword);
-    boolean existsByIsbn(String isbn);
+    boolean existsByISBN(String isbn);
 }

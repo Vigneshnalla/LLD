@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DesingPatterns" />
+        <module name="AmazonShoppingSystem" />
         <module name="solidprinciples" />
         <module name="ADummy" />
         <module name="DesingPrinciplesC" />

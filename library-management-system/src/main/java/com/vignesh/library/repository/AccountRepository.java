@@ -11,15 +11,23 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface AccountRepository extends JpaRepository<Account, Long> {
+public interface AccountRepository extends JpaRepository<Account, String> { // ✅ Changed to String (account_id)
+
     List<Account> findByStatus(AccountStatus status);
 
-    Optional<Account> findByPersonEmail(String email);
+    // ✅ Fixed: Direct email field (no more person.email)
+    Optional<Account> findByEmail(String email);
 
-    boolean existsByPersonEmail(String email);
+    // ✅ Fixed: Direct email field
+    boolean existsByEmail(String email);
 
-    @Query("SELECT a FROM Account a WHERE LOWER(a.person.email) LIKE LOWER(CONCAT('%', :keyword, '%')) " +
-            "OR LOWER(a.person.name) LIKE LOWER(CONCAT('%', :keyword, '%'))")
+    // ✅ Fixed: Direct name and email fields (no more person.)
+    @Query("SELECT a FROM Account a WHERE LOWER(a.email) LIKE LOWER(CONCAT('%', :keyword, '%')) " +
+            "OR LOWER(a.name) LIKE LOWER(CONCAT('%', :keyword, '%'))")
     List<Account> searchByEmailOrName(@Param("keyword") String keyword);
 
+    // ✅ Additional useful methods
+    List<Account> findByNameContainingIgnoreCase(String name);
+
+    Optional<Account> findByPhoneNo(String phoneNo);
 }
